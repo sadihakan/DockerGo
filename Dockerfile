@@ -3,4 +3,5 @@ RUN mkdir /DockerGo
 ADD . /DockerGo
 WORKDIR /DockerGo
 RUN go build -o main .
+EXPOSE 8080
 CMD ["/DockerGo/main"]
